@@ -20,6 +20,10 @@ nav {
   align-items: center;
 }
 
+.hamburger {
+  display: none;
+}
+
 .nav-links {
   display: flex;
   width: 70%;
@@ -38,7 +42,13 @@ nav {
 }
 
 @media (max-width: 700px) {
-  header {
-    display: none;
+  nav {
+    height: auto;
+  }
+  .hamburger {
+    display: initial;
+  }
+  .nav-links {
+    flex-direction: column;
   }
 }
